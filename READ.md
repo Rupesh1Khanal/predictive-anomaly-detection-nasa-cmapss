@@ -7,7 +7,7 @@ The goal is to evaluate the effectiveness of **reconstruction-based** (LSTM-AE) 
 
 ## 📂 Repository Structure
 
-Comparison_of_models/
+```Comparison_of_models/
 ├── artifacts/ # Generated artifacts: metrics, scores, PR arrays, weights
 ├── data/ # Raw + processed NASA C-MAPSS FD001 data
 ├── notebooks/ # Jupyter notebooks for preprocessing, training, visualization
@@ -17,7 +17,7 @@ Comparison_of_models/
 ├── config.yaml # Master config: preprocessing, training, evaluation settings
 ├── README.md
 └── requirements.txt # Reproducible environment specification
-
+```
 
 ### Key Directories
 
