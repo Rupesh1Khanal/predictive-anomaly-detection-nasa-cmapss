@@ -86,7 +86,11 @@ artifacts/**
 *.7z
 *.rar
 
-# Always keep these top-level files
+runs/
+*.npy
+env_snapshot.json
+yaml_hash.txt
+
 !README.md
 !requirements.txt
 !config.yaml
