@@ -167,6 +167,7 @@ predictive-anomaly-detection-nasa-cmapss/
 │   ├── preprocessing_meta.json
 │   └── splits.json
 │
+├── .ignore
 ├── config.yaml
 ├── requirements.txt
 └── README.md
