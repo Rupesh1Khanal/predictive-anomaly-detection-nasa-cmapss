@@ -112,6 +112,7 @@ LSTM-AE: PR-AUC (raw) ≈ 0.41, PR-AUC (warm-up) ≈ 0.54
 MAE: PR-AUC (raw) ≈ 0.11, PR-AUC (warm-up) ≈ 0.19
 
 👉 LSTM-AE consistently outperforms MAE across validation and test.
+
 👉 MAE shows limited robustness despite masking, indicating higher sensitivity to masking ratio and training stability.
 
 🔄 Reproducibility
