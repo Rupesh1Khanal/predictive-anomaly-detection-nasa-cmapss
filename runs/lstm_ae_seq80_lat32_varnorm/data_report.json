@@ -1,6 +1,0 @@
-{
-  "train_windows_total": 10207,
-  "train_windows_normal": 7487,
-  "val_windows_total": 2524,
-  "val_anomaly_rate": 0.2694136291600634
-}
