@@ -1,97 +1,64 @@
 # Python / Jupyter / OS files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.so
-*.dll
-*.dylib
-*.egg-info/
-.dist-info/
-.build/
+.ipynb_checkpoints/
 .pytest_cache/
 .mypy_cache/
 .coverage
 htmlcov/
 
-.ipynb_checkpoints/   # Jupyter auto-saves
-.DS_Store             # macOS finder metadata
-Thumbs.db             # Windows thumbnail cache
+.DS_Store
+Thumbs.db
 
-# Editor / IDE settings
+# Editor / IDE
 .vscode/
 .idea/
 *.code-workspace
 
-
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
-thesis_env/   # local venv used for this project
+thesis_env/
 
-
-# Data
-
-# Keeping the raw NASA .txt files (they're small and public)
-data/*.txt
-
-# Ignoring any processed or heavy files created during preprocessing
+# Processed data
 data/*.npy
 data/*.npz
 data/*.pkl
 data/*.csv
 
-# Keeping a readme or .gitkeep so the folder exists
 !data/README.md
 !data/.gitkeep
 
-# Experiment logs
-runs/                     # per-experiment logs/configs
-logs/                     # training logs
-events.out.tfevents*      # TensorBoard event files
+# Experiment outputs
+runs/
+logs/
+checkpoints/
+events.out.tfevents*
 
-# Artifacts
-# By default, ignoring everything under artifacts
-artifacts/**
+# Large generated arrays
+*.npy
+*.npz
 
-# Keeping only the small, reproducible essentials
-!artifacts/figures/
-!artifacts/metrics_*.json
-!artifacts/pr_*.npy
-!artifacts/scores_*.npy
-!artifacts/preprocessing_meta.json
-!artifacts/splits.json
-!artifacts/yaml_hash.txt
-!artifacts/env_snapshot.json
-!artifacts/run_summary.json
+# Internal metadata
+env_snapshot.json
+yaml_hash.txt
 
-# Models are large binaries → ignored by default.
-# If later we want to publish a trained model, we can enable Git LFS
-# (https://git-lfs.com/) and then uncomment one of these:
-# !artifacts/model_lstm_ae.h5
-# !artifacts/model_mae.h5
-
-# Large binary patterns (just in case)
+# Model binaries
 *.h5
 *.ckpt
-*.ckpt.*
 *.pb
 *.tflite
 *.onnx
 *.pt
 *.pth
-*.tar
+
+# Archives
 *.zip
+*.tar
 *.7z
 *.rar
 
-runs/
-*.npy
-env_snapshot.json
-yaml_hash.txt
-
-!README.md
-!requirements.txt
-!config.yaml
-!.gitignore
+# Temp
+*.tmp
+*.log
